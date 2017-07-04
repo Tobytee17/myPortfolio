@@ -61,22 +61,28 @@ h4 {
   font-style:italic;
 }
 .jumbotron  {
-  border-radius:0px;
+  border: 1px #e3e3e3 solid;
+  margin: 2% 6% 2% 6%;
+  background: inherit;
 }
 .col-lg-6 {
   text-align:left;
 }
 .btn {
   display:inline;
-  margin-top:30px;
+  margin: 30px 0px 20px 0px;
 }
 #gitButton {
   margin-left:30px;
 }
 .img-responsive {
   padding:5%;
-  border-radius:60px;
   max-height:500px;
+  border: 2px #e3e3e3 solid;
+}
+
+img {
+    border: 2px #e3e3e3 solid;
 }
 
 </style>

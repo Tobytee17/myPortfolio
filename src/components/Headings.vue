@@ -8,6 +8,7 @@
             </div>
         </div>
     </div>
+    <hr>
   </div>
 </template>
 
@@ -37,7 +38,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
   .well {
     height:50px;
     padding:0px;
@@ -56,5 +57,15 @@ export default {
 
 .well {
   border-radius:0px;
+  background: inherit;
+}
+
+.row {
+  margin: 0% 5% 0% 5%;
+}
+
+hr {
+  padding:0px;
+  margin:0px 0px 20px 0px;
 }
 </style>
