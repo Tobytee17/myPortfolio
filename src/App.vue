@@ -1,22 +1,19 @@
 <template>
   <div id="app">
     <headings></headings>
-    <!--<projects></projects>-->
-    <home></home>
+      <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Projects from './components/Projects.vue'
 import Headings from './components/Headings.vue'
-import Home from './components/Home.vue'
+
+
 
 export default {
   name: 'app',
   components: {
     Headings,
-    Projects,
-    Home
   }
 }
 </script>

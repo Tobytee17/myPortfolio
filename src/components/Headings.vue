@@ -2,9 +2,24 @@
   <div class="headings">
     <img class="img-responsive" src='../assets/logo.png'></img>
     <div class="row">
-        <div class="col-sm-3 col-md-3 col-lg-3" v-for="title in headings" >
+        <div class="col-sm-3 col-md-3 col-lg-3">
             <div class="well">
-              <h3 v-text="title.heading"></h3>
+              <h3><router-link to="/">Home</router-link></h3>
+            </div>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3">
+            <div class="well">
+              <h3><router-link to="/projects">Projects</router-link></h3>
+            </div>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3">
+            <div class="well">
+              <h3>CV</h3>
+            </div>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3">
+            <div class="well">
+              <h3>Blog</h3>
             </div>
         </div>
     </div>
@@ -15,23 +30,6 @@
 <script>
 export default {
   name: 'headings',
-  data () {
-    return {
-        headings: 
-        [
-            {heading: "Home"},
-            {heading: "Projects"},
-            {heading: "CV"},
-            {heading: "Blog"},
-        ]
-    }
-  },
-  methods: {
-    
-  },
-  computed: {
-
-  },
 }
 </script>
 
