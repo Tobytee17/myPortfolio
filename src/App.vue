@@ -1,15 +1,18 @@
 <template>
   <div id="app">
+    <headings></headings>
     <projects></projects>
   </div>
 </template>
 
 <script>
-import Projects from './components/Projects'
+import Projects from './components/Projects.vue'
+import Headings from './components/Headings.vue'
 
 export default {
   name: 'app',
   components: {
+    Headings,
     Projects
   }
 }

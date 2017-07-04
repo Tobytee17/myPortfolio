@@ -45,10 +45,7 @@ export default {
         window.location = targetLive;
       }
     }
-  },
-  computed: {
-
-  },
+  }
 }
 </script>
 
@@ -64,10 +61,10 @@ h4 {
   font-style:italic;
 }
 .jumbotron  {
-  border-radius: 50px;
+  border-radius:0px;
 }
 .col-lg-6 {
-  text-align: left;
+  text-align:left;
 }
 .btn {
   display:inline;
@@ -77,9 +74,9 @@ h4 {
   margin-left:30px;
 }
 .img-responsive {
-  padding: 5%;
-  border-radius: 60px;
-  max-height: 500px;
+  padding:5%;
+  border-radius:60px;
+  max-height:500px;
 }
 
 </style>
