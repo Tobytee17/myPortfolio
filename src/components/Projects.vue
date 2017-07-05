@@ -25,8 +25,8 @@ export default {
       projectList: [
         {title: 'Currency Converter', description: "A basic currency converter that pulls the current exchange rates for 30 different currencies from the Central European Bank.", technology: 'HTML/CSS (Bootstrap), Javascript, JQuery', github: "https://github.com/Tobytee17/currencyConverter", source: "../static/currencyConverter.png", onGithub: true, isLive: false, liveSite: "", },
         {title: 'ToDo List', description: "A simple ToDo list that lets users add tasks to their list, then cross them off and delete them upon completion.", technology: 'HTML/CSS (Bootstrap), Javascript, JQuery', github: "https://github.com/Tobytee17/ToDoList", source: "../static/ToDoList.png", onGithub: true, isLive: false, liveSite: "", },
-        {title: 'Quote Generator', description: "A quote generator that gives users a quote from a stored list. Users can also contribute their own quotes which can then also be given to other users", technology: 'HTML/CSS, Javascript, PHP', github: "https://github.com/Tobytee17/quoteGenerator", source: "", onGithub: true, isLive: false, liveSite: "", },
-        {title: 'Portfolio Website', description: "This is the website you are currently viewing. It has been created as a centralised hub to display my work, and allow me to track my progress as a developer.", technology: 'HTML/CSS (Bootstrap), Javascript (Vue.js)', github: "", source: "", onGithub: false, isLive: true, liveSite: "", }
+        {title: 'Quote Generator', description: "A quote generator that gives users a quote from a stored list. Users can also contribute their own quotes which can then also be given to other users", technology: 'HTML/CSS, Javascript, PHP', github: "https://github.com/Tobytee17/quoteGenerator", source: "../static/quoteGenerator.png", onGithub: true, isLive: false, liveSite: "", },
+        {title: 'Portfolio Website', description: "This is the website you are currently viewing. It has been created as a centralised hub to display my work, and allow me to track my progress as a developer.", technology: 'HTML/CSS (Bootstrap), Javascript (Vue.js)', github: "", source: "", onGithub: false, isLive: true, liveSite: "./", }
       ],
     }
   },
@@ -79,10 +79,8 @@ h4 {
   padding:5%;
   max-height:500px;
   border: 2px #e3e3e3 solid;
+  float:right;
 }
 
-img {
-    border: 2px #e3e3e3 solid;
-}
 
 </style>
