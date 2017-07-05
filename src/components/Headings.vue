@@ -7,6 +7,11 @@
               <h3><router-link :to="page.link" v-text="page.title"></router-link></h3>
             </div>
         </div>
+        <div class="col-sm-3 col-md-3 col-lg-3">
+          <div class="well">
+            <a href="./static/CV_2017.pdf" target="_blank"><h3>CV</h3></a>
+          </div>
+        </div>
     </div>
     <hr>
   </div>
@@ -20,7 +25,6 @@ export default {
       pages: [
         {title: "Home", link: "/" },
         {title: "Projects", link: "/projects" },
-        {title: "CV", link: "" },
         {title: "Blog", link: "" }
       ]
     }

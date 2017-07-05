@@ -1,13 +1,14 @@
 <template>
   <div id="app">
     <headings></headings>
+    <transition name="fade">
       <router-view></router-view>
+    </transition>
   </div>
 </template>
 
 <script>
 import Headings from './components/Headings.vue'
-
 
 
 export default {
@@ -32,4 +33,12 @@ body {
   padding:20px;
 
 }
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.25s ease-in-out;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
 </style>

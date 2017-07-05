@@ -15,7 +15,7 @@
             <h1 v-text="contactMe"></h1>
         </div>
         <div class="col-lg-3" v-for="platform in socialMedia">
-            <a v-bind:href="platform.link"><i v-bind:class="platform.source"></i></a>
+            <a v-bind:href="platform.link" v-bind:target="platform.target"><i v-bind:class="platform.source"></i></a>
         </div>
     </div>
   </div>
@@ -32,9 +32,9 @@ export default {
         ],
         socialMedia:
         [
-            {platform: "Twitter", source: "fa fa-twitter", link: "https://twitter.com/TobyTee17" },
-            {platform: "GitHub", source: "fa fa-github", link: "https://github.com/Tobytee17"},
-            {platform: "LinkedIn", source: "fa fa-linkedin", link: "https://www.linkedin.com/in/toby-tee-27aaa5108/"},
+            {platform: "Twitter", source: "fa fa-twitter", link: "https://twitter.com/TobyTee17", target: "__blank" },
+            {platform: "GitHub", source: "fa fa-github", link: "https://github.com/Tobytee17", target: "__blank"},
+            {platform: "LinkedIn", source: "fa fa-linkedin", link: "https://www.linkedin.com/in/toby-tee-27aaa5108/", target: "__blank"},
             {platform: "Email", source: "fa fa-envelope-o", link: "mailto:tobytee17@gmail.com"},
         ],
         contactMe: "Get in touch with me"
