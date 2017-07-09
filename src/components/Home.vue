@@ -6,7 +6,6 @@
                 <h1 v-text="title.title"></h1>
                 <hr>
                 <p v-text="title.content"></p>
-                <!--<i class="fa fa-twitter" aria-hidden="true"></i>-->
             </div>
         </div>
     </div>

@@ -3,14 +3,10 @@
     <img class="img-responsive" src='../assets/logo.png'></img>
     <div class="row">
         <div class="col-sm-3 col-md-3 col-lg-3" v-for="page in pages">
-            <div class="well">
-              <h3><router-link :to="page.link" v-text="page.title"></router-link></h3>
-            </div>
+          <h3><router-link :to="page.link" v-text="page.title"></router-link></h3>
         </div>
         <div class="col-sm-3 col-md-3 col-lg-3">
-          <div class="well">
-            <a href="./static/CV_2017.pdf" target="_blank"><h3>CV</h3></a>
-          </div>
+          <h3><a href="./static/CV_2017.pdf" target="_blank">CV</a></h3>
         </div>
     </div>
     <hr>
@@ -25,7 +21,7 @@ export default {
       pages: [
         {title: "Home", link: "/" },
         {title: "Projects", link: "/projects" },
-        {title: "Blog", link: "" }
+        {title: "Blog", link: "/blog" }
       ]
     }
   }
@@ -47,22 +43,27 @@ export default {
   }
 }
 
+hr {
+  padding:0px;
+  margin:0px 0px 20px 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  padding-bottom: 20px;
+}
+
 .img-responsive {
   display:inline-block;
   margin: 100px 0px 100px 0px;
-}
-
-.well {
-  border-radius:0px;
-  background: inherit;
 }
 
 .row {
   margin: 0% 5% 0% 5%;
 }
 
-hr {
-  padding:0px;
-  margin:0px 0px 20px 0px;
-}
+
 </style>
