@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <headings></headings>
-    <transition name="fade">
+    <transition name="fade" mode="out-in">
       <router-view></router-view>
     </transition>
   </div>
@@ -9,7 +9,6 @@
 
 <script>
 import Headings from './components/Headings.vue'
-
 
 export default {
   name: 'app',
@@ -28,18 +27,19 @@ export default {
   color: #2c3e50;
   overflow: hidden;
   font-family: 'Oswald', sans-serif;
-  padding:0px;
+  padding: 0px;
 }
+
 body {
-  background: #c0392b;
+  background: #18185b;
   padding: 0px;
 }
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.25s ease-in-out;
 }
+
 .fade-enter, .fade-leave-to {
   opacity: 0;
 }
-
 </style>

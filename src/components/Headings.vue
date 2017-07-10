@@ -1,13 +1,18 @@
 <template>
   <div class="headings">
-    <h1 id="firstName">Toby </h1> <h1 id="lastName">Tee</h1>
+    <h1 id="firstName">Toby </h1>
+    <h1 id="lastName">Tee</h1>
     <div class="row">
-        <div class="col-sm-3 col-md-3 col-lg-3" v-for="page in pages">
-          <h3><router-link :to="page.link" v-text="page.title"></router-link></h3>
-        </div>
-        <div class="col-sm-3 col-md-3 col-lg-3">
-          <h3><a href="../static/CV_2017.pdf" target="_blank">CV</a></h3>
-        </div>
+      <div class="col-sm-3 col-md-3 col-lg-3" v-for="page in pages">
+        <h3>
+          <router-link :to="page.link" v-text="page.title"></router-link>
+        </h3>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <h3>
+          <a href="../static/CV_2017.pdf" target="_blank">CV</a>
+        </h3>
+      </div>
     </div>
   </div>
 </template>
@@ -18,27 +23,25 @@ export default {
   data() {
     return {
       pages: [
-        {title: "Home", link: "/" },
-        {title: "Projects", link: "/projects" },
-        {title: "Blog", link: "/blog" }
+        { title: "Home", link: "/" },
+        { title: "Projects", link: "/projects" },
+        { title: "Blog", link: "/blog" }
       ]
     }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width: 767px) {
   .well {
-    height:50px;
-    padding:0px;
+    height: 50px;
+    padding: 0px;
     margin: 10px;
   }
   h3 {
-    padding:0xp;
-    margin-top:15px;
+    padding: 0xp;
+    margin-top: 15px;
   }
 }
 
@@ -56,7 +59,7 @@ h3 {
 }
 
 .img-responsive {
-  display:inline-block;
+  display: inline-block;
   margin: 100px 0px 100px 0px;
 }
 
@@ -66,7 +69,7 @@ h3 {
 
 #firstName {
   font-size: 150px;
-  margin:10% 0% 10% 0%;
+  margin: 10% 0% 10% 0%;
   color: #ecf0f1;
   display: inline-block;
 }
@@ -74,8 +77,11 @@ h3 {
 #lastName {
   color: #2bb2c0;
   font-size: 150px;
-  margin:10% 0% 10% 0%;
+  margin: 10% 0% 10% 0%;
   display: inline-block;
 }
 
+.headings {
+  background: #c0392b;
+}
 </style>
