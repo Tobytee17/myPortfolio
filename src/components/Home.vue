@@ -2,16 +2,15 @@
   <div class="home">
     <div class="row container-fluid">
         <div class="col-lg-12" v-for="title in about">
-            <div class="page-header">
                 <h1 v-text="title.title"></h1>
                 <hr>
-                <p v-text="title.content"></p>
-            </div>
+                <h4 v-text="title.content"></h4>
         </div>
     </div>
     <div class ="row container-fluid">
         <div class="page-header">
-            <h1 v-text="contactMe"></h1>
+            <br>
+            <h3 v-text="contactMe"></h3>
         </div>
         <div class="col-lg-3" v-for="platform in socialMedia">
             <a v-bind:href="platform.link" v-bind:target="platform.target"><i v-bind:class="platform.source"></i></a>
@@ -23,11 +22,11 @@
 <script>
 export default {
   name: 'home',
-  data () {
+  data () { 
     return {
         about:
         [
-            {title: "About Me", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae efficitur dolor. Morbi sollicitudin mollis eros at cursus. Pellentesque risus nisi, aliquet eu mollis ut, posuere eu dolor. Duis pretium velit at convallis iaculis. Donec interdum diam id maximus tempus. Nulla sed sapien a neque convallis volutpat. Ut sit amet accumsan diam, vel mattis magna. Duis ac tellus quis erat pharetra blandit molestie nec odio. Nunc vulputate vulputate mi. Nulla turpis nunc, dignissim et sem at, malesuada cursus leo. Sed interdum tellus sit amet eleifend aliquet. Aliquam in metus eu nulla tempor mattis. Vivamus dapibus, nulla eu aliquam euismod, nulla lacus lacinia lacus, id sollicitudin nisl justo id diam."},
+            {title: "About Me", content: "Hey there, my name is Toby Tee and welcome to my website. I am currently an Information Technology student taking my Bachelors of Information Sciences at Massey University’s Albany Campus. Through studying Information Technology, I have developed a passion for web development, and am actively working to secure my future as a front-end web developer. Feel free to look through my projects, CV and GitHub for more information regarding my technical skills. Please feel free to contact me if you have any questions regarding any of the content displayed on this website."},
         ],
         socialMedia:
         [
@@ -51,12 +50,28 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1 {
-    padding-bottom: 0px;
+    margin: 7% 0% 3% 0%;
+}
+
+h4 {
+    margin: 3% 10% 10% 10%;
+}
+
+h3 {
+    margin: 7% 0% 0% 0%;
 }
 
 i {
     font-size: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+}
+
+a {
+    color: #ecf0f1;
+}
+
+a:hover {
+    color: #2bb2c0;
 }
 
 i:hover {
@@ -69,6 +84,10 @@ i:hover {
 
 .page-header {
     text-align: center;
+}
+
+.home {
+    color: #ecf0f1;
 }
 
 </style>

@@ -47,10 +47,16 @@ small {
 }
 
 .well {
+  border-radius: 15px;
   margin: 20px 10% 20px 10%;
 }
 
 a {
   text-decoration: none;
+  color:#e74c3c;
+}
+
+a:hover {
+  color: #2bb2c0;
 }
 </style>

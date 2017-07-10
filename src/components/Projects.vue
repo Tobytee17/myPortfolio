@@ -63,7 +63,8 @@ h4 {
 .jumbotron  {
   border: 1px #e3e3e3 solid;
   margin: 2% 6% 2% 6%;
-  background: inherit;
+  border-radius: 20px;
+  background: #f5f5f5;
 }
 .col-lg-6 {
   text-align:left;
@@ -71,7 +72,12 @@ h4 {
 .btn {
   display:inline;
   margin: 30px 0px 20px 0px;
+  background: #2bb2c0;
 }
+.btn:hover {
+  background: #228e99;
+}
+
 #gitButton {
   margin-left:30px;
 }
@@ -81,6 +87,4 @@ h4 {
   border: 2px #e3e3e3 solid;
   float:right;
 }
-
-
 </style>

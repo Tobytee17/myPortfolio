@@ -8,8 +8,8 @@
           </div>
           <br>
           <p v-text="article.contentBlock1"></p>
-          <br v-if="article.contentBlock2 != null">
-          <br v-if="article.contentBlock2 != null">
+          <br v-if="article.contentBlock1 != null">
+          <br v-if="article.contentBlock1 != null">
 
           <p v-text="article.contentBlock2"></p>
           <br v-if="article.contentBlock2 != null">
@@ -46,6 +46,10 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  color:#e74c3c;
+}
+
 p {
     margin: 0% 10% 0% 10%;
 }
@@ -55,7 +59,12 @@ small {
 }
 
 .page-header {
-  text-align: left;
+  text-align: center;
   margin: 0% 20% 0% 20%;
+}
+
+.well {
+  margin: 20px 10% 20px 10%;
+  border-radius: 15px;
 }
 </style>

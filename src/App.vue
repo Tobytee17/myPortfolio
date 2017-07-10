@@ -31,7 +31,7 @@ export default {
 }
 body {
   padding:20px;
-
+  background: #c0392b;
 }
 
 .fade-enter-active, .fade-leave-active {

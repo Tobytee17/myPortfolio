@@ -1,12 +1,12 @@
 <template>
   <div class="headings">
-    <img class="img-responsive" src='../assets/logo.png'></img>
+    <h1 id="name">Toby </h1> <h1 id="lastName">Tee</h1>
     <div class="row">
         <div class="col-sm-3 col-md-3 col-lg-3" v-for="page in pages">
           <h3><router-link :to="page.link" v-text="page.title"></router-link></h3>
         </div>
         <div class="col-sm-3 col-md-3 col-lg-3">
-          <h3><a href="./static/CV_2017.pdf" target="_blank">CV</a></h3>
+          <h3><a href="../static/CV_2017.pdf" target="_blank">CV</a></h3>
         </div>
     </div>
     <hr>
@@ -50,6 +50,11 @@ hr {
 
 a {
   text-decoration: none;
+  color: #ecf0f1;
+}
+
+a:hover {
+  color: #bdc3c7;
 }
 
 h3 {
@@ -63,5 +68,19 @@ h3 {
 
 .row {
   margin: 0% 5% 0% 5%;
+}
+
+#name {
+  font-size: 150px;
+  margin:10% 0% 10% 0%;
+  color: #ecf0f1;
+  display: inline-block;
+}
+
+#lastName {
+  color: #2bb2c0;
+  font-size: 150px;
+  margin:10% 0% 10% 0%;
+  display: inline-block;
 }
 </style>
