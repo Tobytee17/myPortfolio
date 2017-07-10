@@ -19,9 +19,7 @@ export default {
   data () {
     return {
         posts: [
-          {title: "TestPost1", date: "10/07/2017", summary: "Here is the content of this article, I am trying to make it a little bit longer so that it can look like a real post", link: "/blog/1"},
-          {title: "TestPost2", date: "10/07/2017", summary: "Here is the content of this article, I am trying to make it a little bit longer so that it can look like a real post", link: "/blog/2"},
-          {title: "TestPost3", date: "10/07/2017", summary: "Here is the content of this article, I am trying to make it a little bit longer so that it can look like a real post", link: "/blog/3"}
+          {title: "Learning by Doing: This Website", date: "11/07/2017", summary: "When it comes to learning how to code, there are many different approaches that can be taken. For me, the method that has taught me the most has been learning through doing.", link: "/blog/learningByDoing"},
         ]
     }
   },
@@ -39,7 +37,7 @@ export default {
 
 .page-header {
   text-align: left;
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 30px;;
 }
 
 small {
@@ -58,5 +56,9 @@ a {
 
 a:hover {
   color: #2bb2c0;
+}
+
+.blog {
+  background: #18185b;
 }
 </style>

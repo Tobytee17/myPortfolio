@@ -82,9 +82,15 @@ h4 {
   margin-left:30px;
 }
 .img-responsive {
-  padding:5%;
   max-height:500px;
   border: 2px #e3e3e3 solid;
   float:right;
+  border-radius: 15px;
+}
+
+.projects {
+  background: #18185b;
+  padding-top:5px;
+  padding-bottom:5px;
 }
 </style>

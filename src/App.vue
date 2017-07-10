@@ -28,10 +28,11 @@ export default {
   color: #2c3e50;
   overflow: hidden;
   font-family: 'Oswald', sans-serif;
+  padding:0px;
 }
 body {
-  padding:20px;
   background: #c0392b;
+  padding: 0px;
 }
 
 .fade-enter-active, .fade-leave-active {

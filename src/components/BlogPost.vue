@@ -7,17 +7,8 @@
             <h1 v-text="article.title"></h1><small v-text="article.date"></small>
           </div>
           <br>
-          <p v-text="article.contentBlock1"></p>
-          <br v-if="article.contentBlock1 != null">
-          <br v-if="article.contentBlock1 != null">
-
-          <p v-text="article.contentBlock2"></p>
-          <br v-if="article.contentBlock2 != null">
-          <br v-if="article.contentBlock2 != null">
-
-          <p v-text="article.contentBlock3"></p>
-          <br v-if="article.contentBlock3 != null">
-          <br v-if="article.contentBlock3 != null">
+          <p v-text="content" v-for="content in article.content">
+          </p>
         </div>
       </div>
     </div>
@@ -30,10 +21,9 @@ export default {
   data () {
     return {
         articles: [
-          {title: "TestPost1", date: "10/07/2017", summary: "Here is the content of this article, I am trying to make it a little bit longer so that it can look like a real post", contentBlock1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae auctor ex. In vehicula commodo risus, mattis feugiat dolor eleifend id. Donec non ante et lectus accumsan dapibus et non dui. Donec suscipit condimentum nunc, vitae sagittis sapien tincidunt sed. Nulla vestibulum lectus et vulputate facilisis. Aenean tincidunt maximus urna et finibus. Nullam pharetra ullamcorper dui quis efficitur. Sed ultrices nisl sed ligula feugiat, sit amet condimentum dui laoreet. Nam pretium rutrum eros id aliquam. Quisque ut arcu tincidunt, volutpat erat sed, condimentum dui. Curabitur ornare ipsum ac convallis convallis. Suspendisse consectetur nisi sit amet lacinia malesuada. Pellentesque quis felis nec erat posuere ultrices. Phasellus felis nisi, malesuada ut consequat ac, volutpat at leo. Suspendisse sed molestie est. Proin eget tincidunt justo.", link: "1"},
-          {title: "TestPost2", date: "10/07/2017", summary: "Here is the content of this article, I am trying to make it a little bit longer so that it can look like a real post", contentBlock1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae auctor ex. In vehicula commodo risus, mattis feugiat dolor eleifend id. Donec non ante et lectus accumsan dapibus et non dui. Donec suscipit condimentum nunc, vitae sagittis sapien tincidunt sed. Nulla vestibulum lectus et vulputate facilisis. Aenean tincidunt maximus urna et finibus. Nullam pharetra ullamcorper dui quis efficitur. Sed ultrices nisl sed ligula feugiat, sit amet condimentum dui laoreet. Nam pretium rutrum eros id aliquam. Quisque ut arcu tincidunt, volutpat erat sed, condimentum dui. Curabitur ornare ipsum ac convallis convallis. Suspendisse consectetur nisi sit amet lacinia malesuada. Pellentesque quis felis nec erat posuere ultrices. Phasellus felis nisi, malesuada ut consequat ac, volutpat at leo. Suspendisse sed molestie est. Proin eget tincidunt justo.", contentBlock2: "Morbi lacinia neque a sapien efficitur efficitur. Phasellus tincidunt ultricies metus, nec porttitor ligula. Cras viverra odio feugiat, tempor justo vel, porta tellus. Donec pretium faucibus ante, ut tincidunt tellus porttitor in. Donec ac ultrices nisi, ornare fermentum tortor. Sed diam libero, ultrices ac sapien vitae, fermentum facilisis metus. Nunc ut gravida dui, sit amet commodo nisi. Ut iaculis bibendum orci non tempor. Curabitur convallis, diam vel dignissim lobortis, urna massa egestas odio, ac scelerisque ex mi vitae velit. Duis rutrum, orci vitae bibendum elementum, ipsum ex blandit risus, nec facilisis ligula tellus vel enim. Sed eu lacus nec nisi dapibus ultrices. Donec commodo diam vitae nisl efficitur scelerisque. Curabitur placerat interdum tincidunt.", link: "2"},
-          {title: "TestPost3", date: "10/07/2017", summary: "Here is the content of this article, I am trying to make it a little bit longer so that it can look like a real post", contentBlock1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae auctor ex. In vehicula commodo risus, mattis feugiat dolor eleifend id. Donec non ante et lectus accumsan dapibus et non dui. Donec suscipit condimentum nunc, vitae sagittis sapien tincidunt sed. Nulla vestibulum lectus et vulputate facilisis. Aenean tincidunt maximus urna et finibus. Nullam pharetra ullamcorper dui quis efficitur. Sed ultrices nisl sed ligula feugiat, sit amet condimentum dui laoreet. Nam pretium rutrum eros id aliquam. Quisque ut arcu tincidunt, volutpat erat sed, condimentum dui. Curabitur ornare ipsum ac convallis convallis. Suspendisse consectetur nisi sit amet lacinia malesuada. Pellentesque quis felis nec erat posuere ultrices. Phasellus felis nisi, malesuada ut consequat ac, volutpat at leo. Suspendisse sed molestie est. Proin eget tincidunt justo.", contentBlock2: "Morbi lacinia neque a sapien efficitur efficitur. Phasellus tincidunt ultricies metus, nec porttitor ligula. Cras viverra odio feugiat, tempor justo vel, porta tellus. Donec pretium faucibus ante, ut tincidunt tellus porttitor in. Donec ac ultrices nisi, ornare fermentum tortor. Sed diam libero, ultrices ac sapien vitae, fermentum facilisis metus. Nunc ut gravida dui, sit amet commodo nisi. Ut iaculis bibendum orci non tempor. Curabitur convallis, diam vel dignissim lobortis, urna massa egestas odio, ac scelerisque ex mi vitae velit. Duis rutrum, orci vitae bibendum elementum, ipsum ex blandit risus, nec facilisis ligula tellus vel enim. Sed eu lacus nec nisi dapibus ultrices. Donec commodo diam vitae nisl efficitur scelerisque. Curabitur placerat interdum tincidunt.", contentBlock3: "Mauris mattis sit amet mauris nec dictum. Mauris ultrices vestibulum dictum. Ut in purus eget enim pharetra blandit. Maecenas a magna in tortor eleifend volutpat. Praesent hendrerit sagittis porttitor. Donec ac justo ultrices, blandit elit ac, faucibus felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc non nisi quam.", link: "3"},
-        ]
+          {title: "Learning by Doing: This Website", date: "11/07/2017", summary: "When it comes to learning how to code, there are many different approaches that can be taken. For me, the method that has taught me the most has been learning through doing.", link: "learningByDoing", 
+          content: ["When I began learning to code, I had a very different learning approach to what I now have. In the beginning, I was very scared of creating projects for fear of being looked down upon for my creations being inferior and insignificant. As a result of this, my approach to learning to code often focused on spending countless hours reading through textbooks and over language documentation, trying to memorise sets of functions, and reading theoretical solutions to theoretical problems. The pitfall I fell into by doing this however, is that not only was it demotivating (It was very hard to visualise my progress), but in my head, I could never come to a point where I felt confident in what I knew, and that I should create any projects, as there was always more to learn.", "Don’t get me wrong though, textbooks and documentation have their place, and without them, I would never have been able to create the website you are reading this blog on. Jon Duckett’s ‘JavaScript and JQuery’ and the Vue.JS documentation helped me tremendously in the creating of this website, as they provided me with a foundational knowledge of how JavaScript and the Vue.JS framework works.", "Since becoming somewhat self-aware of the issues and pitfalls that my approach to learning has, I have turned my focus towards trying to apply my acquired knowledge by creating projects centred around specific topics that I am learning at the time. My three main solo projects that I have developed all fit this approach. I created my CurrencyConverter website as a way to apply the knowledge of APIs that I had gained from Jon Duckett’s ‘JavaScript and JQuery’. My ToDoList application was created so that I could practise DOM Manipulation using solely JQuery. Lastly, this website was created so that I could get my feet wet with creating basic single-page website using the Vue.JS framework.", "To end off this first blog post, I would like to acknowledge that this blog entry has little technical detail to it (which might be unexpected for a development blog). But this is mainly due to it being my first post, and it should be noted that I will try to cover more technical, development focused topics in future posts.", " - Toby T." ]},
+        ],
     }
   },
   methods: {
@@ -51,7 +41,7 @@ h1 {
 }
 
 p {
-    margin: 0% 10% 0% 10%;
+  margin: 0% 20% 2% 20%;
 }
 
 small {
@@ -66,5 +56,9 @@ small {
 .well {
   margin: 20px 10% 20px 10%;
   border-radius: 15px;
+}
+
+.blogPost {
+  background: #18185b;
 }
 </style>
