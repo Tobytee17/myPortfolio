@@ -19,9 +19,9 @@ export default {
   data () {
     return {
         posts: [
-          {title: "TestPost1", date: "10/07/2017", summary: "Here is the content of this article, I am trying to make it a little bit longer so that it can look like a real post", link: ""},
-          {title: "TestPost2", date: "10/07/2017", summary: "Here is the content of this article, I am trying to make it a little bit longer so that it can look like a real post", link: ""},
-          {title: "TestPost3", date: "10/07/2017", summary: "Here is the content of this article, I am trying to make it a little bit longer so that it can look like a real post", link: ""}
+          {title: "TestPost1", date: "10/07/2017", summary: "Here is the content of this article, I am trying to make it a little bit longer so that it can look like a real post", link: "/blog/1"},
+          {title: "TestPost2", date: "10/07/2017", summary: "Here is the content of this article, I am trying to make it a little bit longer so that it can look like a real post", link: "/blog/2"},
+          {title: "TestPost3", date: "10/07/2017", summary: "Here is the content of this article, I am trying to make it a little bit longer so that it can look like a real post", link: "/blog/3"}
         ]
     }
   },
