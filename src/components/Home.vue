@@ -30,7 +30,7 @@ export default {
             about:
             [
                 { title: "Profile", src: "./static/me.jpg" },
-                { title: "About Me", content: "Hey there, my name is Toby Tee and welcome to my website. I am currently an Information Technology student taking my Bachelors of Information Sciences at Massey University’s Albany Campus. Through studying Information Technology, I have developed a passion for web development, and am actively working to secure my future as a front-end web developer. Feel free to look through my projects, CV and GitHub for more information regarding my technical skills. Please feel free to contact me if you have any questions regarding any of the content displayed on this website." },
+                { title: "About Me", content: "Hey there, my name is Toby Tee and welcome to my website. I am currently an Information Technology student taking my Bachelors of Information Sciences at Massey University’s Albany Campus. Through studying Information Technology, I have developed a passion for web development, and am actively working to secure my future as a front-end web developer. Feel free to look through my projects, CV and GitHub for more information regarding my technical skills. If you have any questions regarding any of the content on this website, please don't hesitate to get in touch!" },
                 { title: "Skills", skills: ["HTML", "CSS", "Bootstrap", "JavaScript", "JQuery", "Vue.JS"] },
             ],
             socialMedia:
