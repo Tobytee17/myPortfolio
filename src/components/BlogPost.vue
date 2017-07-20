@@ -34,7 +34,7 @@ export default {
 
 <style scoped>
 h1 {
-  color: #e74c3c;
+  color: #0a5573;
 }
 
 p {
@@ -56,6 +56,6 @@ small {
 }
 
 .blogPost {
-  background: #18185b;
+  background: #333333;
 }
 </style>

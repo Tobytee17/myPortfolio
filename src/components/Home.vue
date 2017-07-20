@@ -69,7 +69,7 @@ a {
 }
 
 a:hover {
-    color: #c0392b;
+    color: #0b79a5;
 }
 
 i:hover {
@@ -85,10 +85,6 @@ i:hover {
     margin-top: 0px;
 }
 
-.home {
-    color: #ecf0f1;
-}
-
 .img-responsive {
     border-radius: 15px;
 }
@@ -98,6 +94,7 @@ i:hover {
 }
 
 .home {
-    background: #18185b;
+    background: #333333;
+    color: #ecf0f1;
 }
 </style>

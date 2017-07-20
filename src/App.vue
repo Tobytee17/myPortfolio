@@ -31,7 +31,7 @@ export default {
 }
 
 body {
-  background: #18185b;
+  background: #333333;
   padding: 0px;
 }
 

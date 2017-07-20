@@ -46,7 +46,7 @@ small {
 
 a {
   text-decoration: none;
-  color: #e74c3c;
+  color: #0a5573;
 }
 
 a:hover {
@@ -54,6 +54,6 @@ a:hover {
 }
 
 .blog {
-  background: #18185b;
+  background: #333333 ;
 }
 </style>

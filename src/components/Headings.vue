@@ -75,13 +75,13 @@ h3 {
 }
 
 #lastName {
-  color: #2bb2c0;
+  color: #e74c3c;
   font-size: 150px;
   margin: 10% 0% 10% 0%;
   display: inline-block;
 }
 
 .headings {
-  background: #c0392b;
+  background: #0a5573;
 }
 </style>
