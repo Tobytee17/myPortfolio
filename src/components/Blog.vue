@@ -41,7 +41,7 @@ small {
 
 .well {
   border-radius: 15px;
-  margin: 20px 10% 20px 10%;
+  margin: 2% 10% 2% 10%;
 }
 
 a {

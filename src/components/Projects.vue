@@ -62,7 +62,7 @@ h4 {
 
 .jumbotron {
   border: 1px #e3e3e3 solid;
-  margin: 2% 6% 2% 6%;
+  margin: 2% 10% 2% 10%;
   border-radius: 20px;
   background: #f5f5f5;
 }

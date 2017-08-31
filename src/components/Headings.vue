@@ -56,6 +56,7 @@ a:hover {
 
 h3 {
   padding-bottom: 20px;
+  font-size: 35px;
 }
 
 .img-responsive {
@@ -69,7 +70,7 @@ h3 {
 
 #firstName {
   font-size: 150px;
-  margin: 10% 0% 10% 0%;
+  margin: 2.5% 0% 2.5% 0%;
   color: #ecf0f1;
   display: inline-block;
 }
@@ -77,7 +78,7 @@ h3 {
 #lastName {
   color: #e74c3c;
   font-size: 150px;
-  margin: 10% 0% 10% 0%;
+  margin: 2.5% 0% 2.5% 0%;
   display: inline-block;
 }
 

@@ -4,16 +4,14 @@
             <div class="col-lg-4" v-for="item in about">
                 <h1 v-text="item.title"></h1>
                 <hr>
-                <h4 v-text="item.content"></h4>
+                <h4 id="aboutMeContent" v-text="item.content"></h4>
                 <img class="img-responsive" :src="item.src">
                 <h4 id="skills" v-for="skills in item.skills" v-text="skills"></h4>
             </div>
         </div>
         <div class="row container-fluid">
-            <div class="page-header">
-                <h3 v-text="contactMe"></h3>
-            </div>
-            <div class="col-lg-3" v-for="platform in socialMedia">
+            <div class="page-header"></div>
+            <div class="col-lg-4" v-for="platform in socialMedia">
                 <a v-bind:href="platform.link" v-bind:target="platform.target">
                     <i v-bind:class="platform.source"></i>
                 </a>
@@ -35,12 +33,10 @@ export default {
             ],
             socialMedia:
             [
-                { platform: "Twitter", source: "fa fa-twitter", link: "https://twitter.com/TobyTee17", target: "__blank" },
                 { platform: "GitHub", source: "fa fa-github", link: "https://github.com/Tobytee17", target: "__blank" },
                 { platform: "LinkedIn", source: "fa fa-linkedin", link: "https://www.linkedin.com/in/toby-tee-27aaa5108/", target: "__blank" },
                 { platform: "Email", source: "fa fa-envelope-o", link: "mailto:tobytee17@gmail.com" },
             ],
-            contactMe: "Get in touch with me"
         }
     },
 }
@@ -48,6 +44,7 @@ export default {
 
 <style scoped>
 h1 {
+    font-size: 35px;
     margin: 7% 0% 3% 0%;
 }
 
@@ -57,10 +54,11 @@ h4 {
 
 h3 {
     margin: 0% 0% 0% 0%;
+    font-size: 40px;
 }
 
 i {
-    font-size: 50px;
+    font-size: 70px;
     padding-bottom: 30px;
 }
 
@@ -82,7 +80,7 @@ i:hover {
 
 .page-header {
     text-align: center;
-    margin-top: 0px;
+    margin-top: 3px;
 }
 
 .img-responsive {
@@ -91,10 +89,16 @@ i:hover {
 
 #skills {
     margin: 30px;
+    font-size: 23px;
 }
 
 .home {
     background: #333333;
     color: #ecf0f1;
 }
+
+#aboutMeContent {
+    font-size: 24px;
+}
+
 </style>
