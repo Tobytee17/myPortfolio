@@ -56,6 +56,6 @@ small {
 }
 
 .blogPost {
-  background: #333333;
+  background: #E8EACD;
 }
 </style>

@@ -54,6 +54,6 @@ a:hover {
 }
 
 .blog {
-  background: #333333 ;
+  background: #E8EACD;
 }
 </style>

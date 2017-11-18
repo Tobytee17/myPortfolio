@@ -1,104 +1,128 @@
 <template>
-    <div class="home">
-        <div class="row container-fluid">
-            <div class="col-lg-4" v-for="item in about">
-                <h1 v-text="item.title"></h1>
-                <hr>
-                <h4 id="aboutMeContent" v-text="item.content"></h4>
-                <img class="img-responsive" :src="item.src">
-                <h4 id="skills" v-for="skills in item.skills" v-text="skills"></h4>
-            </div>
-        </div>
-        <div class="row container-fluid">
-            <div class="page-header"></div>
-            <div class="col-lg-4" v-for="platform in socialMedia">
-                <a v-bind:href="platform.link" v-bind:target="platform.target">
-                    <i v-bind:class="platform.source"></i>
-                </a>
-            </div>
-        </div>
+  <div class="home">   
+
+    <div id="headerContainer" class="row container-fluid">
+      <h1 id="introduction">I'm <strong>Toby Tee</strong>, an aspiring web and software developer currently based out of Auckland, New Zealand.</h1>
+        <div class="page-header"></div>
+      <div id="socialMedia" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" v-for="platform in socialMedia">
+        <a v-bind:href="platform.link" v-bind:target="platform.target">
+          <i v-bind:class="platform.source"></i>
+        </a> 
+      </div>
     </div>
+
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3" v-for="page in pages">
+        <h3>
+          <router-link :to="page.link" v-text="page.title"></router-link>
+          <div id="navLines" class="page-header"></div>
+        </h3>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <h3>
+          <a href="../static/CV_2017.pdf" target="_blank">CV</a>
+          <div id="navLines" class="page-header"></div>
+        </h3>
+      </div>
+    </div>
+
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'home',
-    data() {
-        return {
-            about:
-            [
-                { title: "Profile", src: "./static/me.jpg" },
-                { title: "About Me", content: "Hey there, my name is Toby Tee and welcome to my website. I am currently an Information Technology student taking my Bachelors of Information Sciences at Massey University’s Albany Campus. Through studying Information Technology, I have developed a passion for web development, and am actively working to secure my future as a front-end web developer. Feel free to look through my projects, CV and GitHub for more information regarding my technical skills. If you have any questions regarding any of the content on this website, please don't hesitate to get in touch!" },
-                { title: "Skills", skills: ["HTML", "CSS", "Bootstrap", "JavaScript", "JQuery", "Vue.JS"] },
-            ],
-            socialMedia:
-            [
-                { platform: "GitHub", source: "fa fa-github", link: "https://github.com/Tobytee17", target: "__blank" },
-                { platform: "LinkedIn", source: "fa fa-linkedin", link: "https://www.linkedin.com/in/toby-tee-27aaa5108/", target: "__blank" },
-                { platform: "Email", source: "fa fa-envelope-o", link: "mailto:tobytee17@gmail.com" },
-            ],
-        }
-    },
+  name: 'Home',
+  data() {
+    return {
+      pages: [
+        { title: "Home", link: "/" },
+        { title: "Projects", link: "/projects" },
+        { title: "About Me", link: "/blog" }
+      ],
+      socialMedia:
+      [
+          { platform: "GitHub", source: "fa fa-github", link: "https://github.com/Tobytee17", target: "__blank" },
+          { platform: "LinkedIn", source: "fa fa-linkedin", link: "https://www.linkedin.com/in/toby-tee-27aaa5108/", target: "__blank" },
+          { platform: "Email", source: "fa fa-envelope-o", link: "mailto:tobytee17@gmail.com" },
+      ],
+    }
+  }
 }
 </script>
 
 <style scoped>
-h1 {
-    font-size: 35px;
-    margin: 7% 0% 3% 0%;
+@media only screen and (max-width: 767px) {
+  .well {
+    height: 50px;
+    padding: 0px;
+    margin: 10px;
+  }
+  h3 {
+    padding: 0xp;
+    margin-top: 15px;
+  }
 }
 
-h4 {
-    margin: 3% 10% 0% 10%;
-}
-
-h3 {
-    margin: 0% 0% 0% 0%;
-    font-size: 40px;
-}
-
-i {
-    font-size: 70px;
-    padding-bottom: 30px;
+#navLines {
+  width: 50%;
+  margin: 0% 25% 0% 25%;
 }
 
 a {
-    color: #ecf0f1;
+  text-decoration: none;
+  color: black;
+  -moz-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
 }
 
 a:hover {
-    color: #0b79a5;
+  color: #bdc3c7;
+}
+
+i {
+  font-size: 25px;
+  color: #bdc3c7;
+  -moz-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
 }
 
 i:hover {
-    transform: scale(1.1);
+  color: black;
+  transform: scale(1.1);
 }
 
-.container-fluid {
-    margin: 0% 5% 0% 5%;
-}
-
-.page-header {
-    text-align: center;
-    margin-top: 3px;
+h3 {
+  padding-bottom: 20px;
+  font-size: 35px;
 }
 
 .img-responsive {
-    border-radius: 15px;
+  display: inline-block;
+  margin: 100px 0px 100px 0px;
 }
 
-#skills {
-    margin: 30px;
-    font-size: 23px;
+.row {
+  margin: 0% 5% 0% 5%;
 }
 
-.home {
-    background: #333333;
-    color: #ecf0f1;
+.headings {
+  background: #fff;
 }
 
-#aboutMeContent {
-    font-size: 24px;
+#socialMedia {
+  padding: 0%;
+}
+
+#headerContainer {
+  margin:10% 27% 10% 27%;
+}
+
+.page-header {
+  margin:5%;
 }
 
 </style>
