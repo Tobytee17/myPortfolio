@@ -11,21 +11,6 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-lg-3 col-md-3 col-sm-3" v-for="page in pages">
-        <h3>
-          <router-link :to="page.link" v-text="page.title"></router-link>
-          <div id="navLines" class="page-header"></div>
-        </h3>
-      </div>
-      <div class="col-sm-3 col-md-3 col-lg-3">
-        <h3>
-          <a href="../static/CV_2017.pdf" target="_blank">CV</a>
-          <div id="navLines" class="page-header"></div>
-        </h3>
-      </div>
-    </div>
-
   </div>
 </template>
 
@@ -37,7 +22,7 @@ export default {
       pages: [
         { title: "Home", link: "/" },
         { title: "Projects", link: "/projects" },
-        { title: "About Me", link: "/blog" }
+        { title: "About Me", link: "/aboutMe" }
       ],
       socialMedia:
       [
@@ -52,33 +37,6 @@ export default {
 
 <style scoped>
 @media only screen and (max-width: 767px) {
-  .well {
-    height: 50px;
-    padding: 0px;
-    margin: 10px;
-  }
-  h3 {
-    padding: 0xp;
-    margin-top: 15px;
-  }
-}
-
-#navLines {
-  width: 50%;
-  margin: 0% 25% 0% 25%;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  -moz-transition: all .1s ease-in;
-  -o-transition: all .1s ease-in;
-  -webkit-transition: all .1s ease-in;
-  transition: all .1s ease-in;
-}
-
-a:hover {
-  color: #bdc3c7;
 }
 
 i {
@@ -95,18 +53,10 @@ i:hover {
   transform: scale(1.1);
 }
 
-h3 {
-  padding-bottom: 20px;
-  font-size: 35px;
-}
 
 .img-responsive {
   display: inline-block;
   margin: 100px 0px 100px 0px;
-}
-
-.row {
-  margin: 0% 5% 0% 5%;
 }
 
 .headings {

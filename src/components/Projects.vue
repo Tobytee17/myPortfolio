@@ -1,21 +1,5 @@
 <template>
   <div class="projects">
-
-    <div class="row">
-      <div class="col-lg-3 col-md-3 col-sm-3" v-for="page in pages">
-        <h3 id="NavButtons">
-          <router-link :to="page.link" v-text="page.title"></router-link>
-          <div id="navLines" class="page-header"></div>
-        </h3>
-      </div>
-      <div class="col-sm-3 col-md-3 col-lg-3">
-        <h3 id="NavButtons">
-          <a href="../static/CV_2017.pdf" target="_blank">CV</a>
-          <div id="navLines" class="page-header"></div>
-        </h3>
-      </div>
-    </div>
-
     <div class="row jumbotron" v-for="projects in projectList">
       <div class="col-lg-6 col-md-6 col-sm-6">
         <h1 id="projectTextTitle" v-text="projects.title"></h1>
@@ -47,7 +31,7 @@ export default {
       pages: [
         { title: "Home", link: "/" },
         { title: "Projects", link: "/projects" },
-        { title: "About Me", link: "/blog" }
+        { title: "About Me", link: "/aboutMe" }
       ],
     }
   },
@@ -72,22 +56,11 @@ export default {
 
 <style scoped>
 
+
+
 #navLines {
   width: 50%;
   margin: 0% 25% 0% 25%;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  -moz-transition: all .1s ease-in;
-  -o-transition: all .1s ease-in;
-  -webkit-transition: all .1s ease-in;
-  transition: all .1s ease-in;
-}
-
-a:hover {
-  color: #bdc3c7;
 }
 
 #projectTextTitle {
@@ -113,16 +86,7 @@ a:hover {
   font-style: italic;
 }
 
-#NavButtons {
-  font-size: 35px;
-}
-
-.row {
-  margin: 5% 5% 5% 5%;
-}
-
 .jumbotron {
-  /* border: 1px #e3e3e3 solid; */
   margin: 2% 10% 2% 10%;
   border-radius: 20px;
   background: #fff;
