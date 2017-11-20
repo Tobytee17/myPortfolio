@@ -28,11 +28,6 @@ export default {
         { title: 'ToDo List', description: "A simple ToDo list that lets users add tasks to their list, then cross them off and delete them upon completion.", technology: 'HTML/CSS (Bootstrap), Javascript, JQuery', github: "https://github.com/Tobytee17/ToDoList", source: "../static/ToDoList.png", onGithub: true, isLive: true, liveSite: "https://tobytee17.github.io/ToDoList/", },
         { title: 'Quote Generator', description: "A quote generator that gives users a quote from a stored list. Users can also contribute their own quotes which can then also be given to other users", technology: 'HTML/CSS, Javascript, PHP', github: "https://github.com/Tobytee17/quoteGenerator", source: "../static/quoteGenerator.png", onGithub: true, isLive: false, liveSite: "", },
       ],
-      pages: [
-        { title: "Home", link: "/" },
-        { title: "Projects", link: "/projects" },
-        { title: "About Me", link: "/aboutMe" }
-      ],
     }
   },
   methods: {

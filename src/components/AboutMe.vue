@@ -40,7 +40,7 @@
           </ul>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4">
-          <h3>Frameworks/Librarys:</h3>
+          <h3>Frameworks:</h3>
           <ul v-for="technologies in article.frameworks">
             <h3><i>{{technologies}}</i></h3>
           </ul>

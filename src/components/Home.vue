@@ -19,11 +19,6 @@ export default {
   name: 'Home',
   data() {
     return {
-      pages: [
-        { title: "Home", link: "/" },
-        { title: "Projects", link: "/projects" },
-        { title: "About Me", link: "/aboutMe" }
-      ],
       socialMedia:
       [
           { platform: "GitHub", source: "fa fa-github", link: "https://github.com/Tobytee17", target: "__blank" },

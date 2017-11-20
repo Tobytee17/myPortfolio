@@ -7,7 +7,8 @@ import Header from './components/Header'
 import Home from './components/Home'
 import Projects from './components/Projects'
 import AboutMe from './components/AboutMe'
-import BlogPost from './components/BlogPost'
+import TopBar from './components/TopBar'
+import EmptyComp from './components/EmptyComp'
 
 Vue.use(VueRouter)
 
@@ -15,10 +16,9 @@ const router = new VueRouter({
   mode: 'history',
   base: __dirname,
   routes: [
-    {path:'/', components: {Header: Home, MainView: Header}},
-    {path:'/projects', components: {Header: Header, MainView: Projects}},
-    {path:'/aboutMe', components: {Header: Header, MainView: AboutMe}},
-    {path:'/blog/:articleID', component: BlogPost}
+    {path:'/', components: {TopBar: EmptyComp, Header: Home, MainView: Header}},
+    {path:'/projects', components: {TopBar: TopBar, Header: Header, MainView: Projects}},
+    {path:'/aboutMe', components: {TopBar: TopBar, Header: Header, MainView: AboutMe}},
   ]
 });
 

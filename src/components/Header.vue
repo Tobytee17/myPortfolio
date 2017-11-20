@@ -74,7 +74,7 @@ h3 {
 }
 
 .row {
-  margin: 5% 5% 0% 5%;
+  margin: 2% 5% 0% 5%;
 }
 
 .headings {
