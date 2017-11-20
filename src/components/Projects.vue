@@ -56,13 +56,6 @@ export default {
 
 <style scoped>
 
-
-
-#navLines {
-  width: 50%;
-  margin: 0% 25% 0% 25%;
-}
-
 #projectTextTitle {
   text-align: left;
   margin-top: 0px;
@@ -87,7 +80,7 @@ export default {
 }
 
 .jumbotron {
-  margin: 2% 10% 2% 10%;
+  margin: 0% 10% 0% 10%;
   border-radius: 20px;
   background: #fff;
 }
