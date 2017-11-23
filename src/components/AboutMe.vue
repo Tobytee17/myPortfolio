@@ -86,7 +86,7 @@ export default {
         { title: "Work Experience", company: "The Warehouse Group", role: "General IT Intern", duration: "10 Weeks", image: "../static/workExperience.jpg" },
       ],
       Me: [
-        {title: "Me", aboutMe: "Hi, I'm Toby Tee, an aspiring web/software developer who is currently based out of Auckland, New Zealand. As well as coding, I have many interests that I pursue in my spare time, these include:", interests: ["Photography", "Gyming", "Travel", "Martial Arts", ""], image: "../static/Me.jpg"}
+        {title: "Me", aboutMe: "Hi, I'm Toby Tee, an aspiring web/software developer who is currently based out of Auckland, New Zealand. As well as coding, I have many interests that I pursue in my spare time, these include:", interests: ["Photography", "Gyming", "Travel", "Martial Arts", ""], image: "../static/ProfilePic.jpg"}
       ]
     }
   },

@@ -1,5 +1,5 @@
 <template>
-  <div class="emptyComo">
+  <div class="emptyComp">
 
   </div>
 </template>
