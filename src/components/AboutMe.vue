@@ -2,7 +2,7 @@
   <div class="aboutMe">
 
     <div class="row" id="rowContainer" v-for="article in Me">
-      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" id="imgCol">
         <img class="img-responsive" v-bind:src="article.image"></img>
       </div>
       <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
@@ -15,7 +15,7 @@
     </div>
 
     <div class="row" id="rowContainer" v-for="article in education">
-      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" id="imgCol">
         <img class="img-responsive" v-bind:src="article.image"></img>
       </div>
       <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
@@ -28,7 +28,7 @@
     </div>
 
     <div class="row" id="rowContainer" v-for="article in skills">
-      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" id="imgCol">
         <img class="img-responsive" v-bind:src="article.image"></img>
       </div>
       <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
@@ -55,7 +55,7 @@
     </div>
 
     <div class="row" id="rowContainer" v-for="article in workExperience">
-      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" id="imgCol">
         <img class="img-responsive" v-bind:src="article.image"></img>
       </div>
       <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
@@ -94,6 +94,16 @@ export default {
 </script>
 
 <style scoped>
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  #imgCol {
+    display:none;
+  }
+  .row {
+    padding-left: 10%;
+  }
+}
+
 .aboutMe {
   background: #fff;
 }

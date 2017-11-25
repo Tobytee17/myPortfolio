@@ -21,9 +21,9 @@ export default {
     return {
       socialMedia:
       [
-          { platform: "GitHub", source: "fa fa-github", link: "https://github.com/Tobytee17", target: "__blank" },
-          { platform: "LinkedIn", source: "fa fa-linkedin", link: "https://www.linkedin.com/in/toby-tee-27aaa5108/", target: "__blank" },
-          { platform: "Email", source: "fa fa-envelope-o", link: "mailto:tobytee17@gmail.com" },
+          { platform: "GitHub", source: "fa fa-github", link: "https://github.com/Tobytee17", target: "__blank"},
+          { platform: "LinkedIn", source: "fa fa-linkedin", link: "https://www.linkedin.com/in/toby-tee-27aaa5108/", target: "__blank"},
+          { platform: "Email", source: "fa fa-envelope-o", link: "mailto:tobytee17@gmail.com"},
       ],
     }
   }
@@ -31,7 +31,10 @@ export default {
 </script>
 
 <style scoped>
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  #introduction {
+    font-size: 25px;
+  }
 }
 
 i {

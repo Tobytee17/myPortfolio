@@ -3,13 +3,13 @@
 
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-3" v-for="page in pages">
-        <h3>
+        <h3 id="headerText">
           <router-link :to="page.link" v-text="page.title"></router-link>
           <div id="navLines" class="page-header"></div>
         </h3>
       </div>
       <div class="col-sm-3 col-md-3 col-lg-3">
-        <h3>
+        <h3 id="headerText">
           <a href="../static/CV_2017.pdf" target="_blank">CV</a>
           <div id="navLines" class="page-header"></div>
         </h3>
@@ -35,6 +35,7 @@ export default {
 </script>
 
 <style scoped>
+
 @media only screen and (max-width: 767px) {
   .well {
     height: 50px;
@@ -43,7 +44,10 @@ export default {
   }
   h3 {
     padding: 0xp;
-    margin-top: 15px;
+    margin-top: 5px;
+  }
+  #headerText {
+    font-size: 25px;
   }
     #navLines {
     display: none;
@@ -92,5 +96,6 @@ h3 {
 .page-header {
   margin:5%;
 }
+
 
 </style>

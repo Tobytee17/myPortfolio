@@ -37,6 +37,12 @@ export default {
 
 <style scoped>
 
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    #socialMedia {
+        margin: 0px 3px 0px 3px;
+    }
+}
+
 .header {
     margin: 0px;
     padding: 0px;
