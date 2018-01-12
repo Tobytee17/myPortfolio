@@ -80,7 +80,7 @@ export default {
         degree: "Bachelor of Information Science", image: "../static/masseyUniversity.jpg" },
       ],
       skills: [
-        { title: "Skills", languages: ["HTML5", "CSS3", "Javascript", "C#"], frameworks: ["JQuery", "VueJS", "Bootstrap 3 & Bulma", ], concepts: ["Agile Development", "Unit Testing", "OOP", "Design Patterns"], image: "../static/codeStockImage.jpg" },
+        { title: "Skills", languages: ["JavaScript (ES6)", "NodeJS", "C#", "HTML5", "CSS3"], frameworks: ["VueJS", "Express", "JQuery", "Bootstrap 3 & Bulma.IO", ], concepts: ["Agile Development", "Unit Testing", "OOP", "Design Patterns"], image: "../static/codeStockImage.jpg" },
       ],
       workExperience: [
         { title: "Work Experience", company: "The Warehouse Group", role: "General IT Intern", duration: "10 Weeks", image: "../static/workExperience.jpg" },

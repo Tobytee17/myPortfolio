@@ -10,7 +10,7 @@
       </div>
       <div class="col-sm-3 col-md-3 col-lg-3">
         <h3 id="headerText">
-          <a href="../static/CV_2017.pdf" target="_blank">CV</a>
+          <a href="../static/CV_2018.pdf" target="_blank">CV</a>
           <div id="navLines" class="page-header"></div>
         </h3>
       </div>
